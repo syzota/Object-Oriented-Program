@@ -34,7 +34,7 @@ public class posttest1 {
             int pilih = -1;
             try {
                   pilih = sc.nextInt();
-                    sc.nextLine(); // buang enter biar ga ganggu input berikutnya
+                    sc.nextLine(); 
             } catch (Exception e) {
                     System.out.println("Enter the right thing, please!");
                     sc.nextLine(); 
