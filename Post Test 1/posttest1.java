@@ -31,8 +31,16 @@ public class posttest1 {
             System.out.println("4. Delete Artist");
             System.out.println("5. Exit");
             System.out.print("Choose the number between 1 to 5: ");
-            int pilih = sc.nextInt();
-            sc.nextLine(); 
+            int pilih = -1;
+            try {
+                  pilih = sc.nextInt();
+                    sc.nextLine(); // buang enter biar ga ganggu input berikutnya
+            } catch (Exception e) {
+                    System.out.println("Enter the right thing, please!");
+                    sc.nextLine(); 
+                    continue; 
+            }
+
 
             switch (pilih) {
                 case 1:
@@ -60,30 +68,40 @@ public class posttest1 {
                     break;
 
                 case 3:
-                    System.out.print("Insert the number of the artist you want to update: ");
-                    int idxU = sc.nextInt() - 1;
-                    sc.nextLine();
-                    if (idxU >= 0 && idxU < artis.size()) {
-                        System.out.print("New name: ");
-                        artis.set(idxU, sc.nextLine());
-                        System.out.print("New genre: ");
-                        genre.set(idxU, sc.nextLine());
-                        System.out.println("The artist's data have been updated successfully!");
-                    } else {
-                        System.out.println("Enter the right thing, please!");
+                    try {
+                        System.out.print("Insert the number of the artist you want to update: ");
+                        int idxU = sc.nextInt() - 1;
+                        sc.nextLine();
+                        if (idxU >= 0 && idxU < artis.size()) {
+                            System.out.print("New name: ");
+                            artis.set(idxU, sc.nextLine());
+                            System.out.print("New genre: ");
+                            genre.set(idxU, sc.nextLine());
+                            System.out.println("The artist's data have been updated successfully!");
+                        } else {
+                            System.out.println("Enter the right number, please!");
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Enter the right number, please!");
+                        sc.nextLine(); 
                     }
                     break;
 
                 case 4:
-                    System.out.print("Insert the number of the artist you want to delete: ");
-                    int idxH = sc.nextInt() - 1;
-                    sc.nextLine();
-                    if (idxH >= 0 && idxH < artis.size()) {
-                        artis.remove(idxH);
-                        genre.remove(idxH);
-                        System.out.println("The artist's data have been deleted successfully!");
-                    } else {
-                        System.out.println("Enter the right thing, please!");
+                    try {
+                        System.out.print("Insert the number of the artist you want to delete: ");
+                        int idxH = sc.nextInt() - 1;
+                        sc.nextLine();
+                        if (idxH >= 0 && idxH < artis.size()) {
+                            artis.remove(idxH);
+                            genre.remove(idxH);
+                            System.out.println("The artist's data have been deleted successfully!");
+                        } else {
+                            System.out.println("Enter the right number, please!");
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Enter the right number, please!");
+                        sc.nextLine(); 
                     }
                     break;
 
