@@ -2,6 +2,7 @@
 
 **Nama**  : Putri Syafana Afrillia
 **NIM**   : 2409116015 
+**Kelas** : A'2024
 
 ---
 
