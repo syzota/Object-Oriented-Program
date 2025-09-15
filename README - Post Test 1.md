@@ -92,4 +92,34 @@ Berikut adalah kode dari fitur _Search Artist_, yang menjadi **Case 5**, dan pen
 
 ## Code Explanation: **Artist**
 
-_Class_ ini berada di _package_ model
+_Class_ ini berada di _package_ model. Urutannya adalah pendeklarasian tiga properti, yaitu nama, genre, dan negara, yang dipakaikan _access modifier_ **privat** agar data terenkapsulasi. 
+
+<img width="517" height="147" alt="image" src="https://github.com/user-attachments/assets/e2072b78-2bef-4fda-b1bf-7c986c915e39" />
+
+Di bawah ini adalah _constructor_ yang berfungsi untuk membuat objek baru dengan mengambil input pengguna.
+
+<img width="647" height="158" alt="image" src="https://github.com/user-attachments/assets/9887cc1a-3a54-4b38-b3c0-b8089e601d97" />
+
+Dan di bawah ini adalah _getter_ dan _setter_, yang digunakan untuk mengambil nilai properti dan mengubahnya. Fitur ini adalah cara agar data privat tetap terakses secara aman.
+
+<img width="866" height="368" alt="image" src="https://github.com/user-attachments/assets/9dea939a-c99c-47b6-b2d3-a4320fee50a8" />
+
+Terakhir adalah pengaturan display memakai _Method_ untuk menampilkan _output_ data jika pengguna memilih menu _view_.
+
+---
+
+## Code Explanation: **ArtistService**
+
+_Class_ ini berada di _package_ service. Di sini juga harus melakukan _import_ pada _class_ di model untuk bisa mengakses ditambah _ArrayList_ yang menampun data yang akan ditambahkan. Pertama,  _Method_ addArtist digunakan untuk menambah artist baru ke daftar.
+
+<img width="557" height="207" alt="image" src="https://github.com/user-attachments/assets/37ee68b5-f507-47c4-a240-595be05bba33" />
+
+_Method_ viewArtists menampilkan seluruh daftar artis yang tersimpan. Jika list kosong, muncul pesan khusus. Jika ada isinya, setiap artis ditampilkan.
+
+<img width="595" height="220" alt="image" src="https://github.com/user-attachments/assets/5137f08b-e5e6-4170-aa7c-892ad1ac0e4f" />
+
+Di bawah ini adalah _Method_ updateArtist dipakai untuk memperbarui data artis berdasarkan index. Kalau index valid, data lama diganti dengan yang baru lewat setter, jika tidak akan ada validasi peringatan.
+
+<img width="684" height="187" alt="image" src="https://github.com/user-attachments/assets/00ffa17a-860a-47bf-8a39-e6ceecd687a9" />
+
+<img width="667" height="168" alt="image" src="https://github.com/user-attachments/assets/185ab022-0913-45a9-9a32-cb618b453f4b" />
