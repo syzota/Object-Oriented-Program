@@ -62,3 +62,34 @@ Apabila pengguna memilih untuk melihat daftar artis, program akan mengecek apaka
 Ketika pengguna memilih opsi memperbarui artis, program akan meminta nomor artis yang ingin diperbarui (sama untuk opsi menghapus) lalu meminta input data yang baru. Terakhir, ketika pengguna memilih opsi keluar, program akan menutup menu dengan menampilkan pesan perpisahan ;)
 
 <img width="345" height="108" alt="image" src="https://github.com/user-attachments/assets/478ebe8f-c266-4329-8450-ac7fae72774c" />
+
+-------------------------------------------------------------------------------------------------
+
+# Posttest 2
+
+---
+
+## Program Description
+Tema yang digunakan masih sama, konsep perusahaan dari **Universal Music Group (UMG)**. Berbedanya dari Posttest 1 adalah ada 3 _class_ dan _properties_, _constructor_, _access modifier_, pengelolaan _packages_ dengan menerapan MVC (_Model-View-Controller_), juga fitur _search_. Seluruh interaksi dilakukan melalui inputan index dari pengguna, jika pengguna salah memasukkan instruksi, maka yang keluar adalah validasi peringatan. Di penjelasan ini, akan dijelaskan yang berbeda saja dari Posttest sebelumnya.
+
+---
+
+## Code Explanation: **Main**
+
+Dalam _class_ ini, _import_ atau modul yang dipakai tetap Scanner dengan tambahan agar _class_ lain terhubung. _Class_ ini ditaruh di _package_ main. 
+
+<img width="397" height="134" alt="image" src="https://github.com/user-attachments/assets/a8192b69-9001-40df-8639-5c80ea2e4c58" />
+
+Untuk menu utama, sama saja tetapi ditambah menu _Search Artist_, begitu juga dengan fitur _Add_, akan ada tambahan _property_ baru yaitu _country_. 
+
+<img width="797" height="876" alt="image" src="https://github.com/user-attachments/assets/c9032999-61c6-4e32-9bb2-dc43fdbd2abf" />
+
+Berikut adalah kode dari fitur _Search Artist_, yang menjadi **Case 5**, dan penutup menjadi ada di **Case 6**.
+
+<img width="676" height="314" alt="image" src="https://github.com/user-attachments/assets/006eb6f5-798c-4279-a29a-3ea3384a2ce5" />
+
+---
+
+## Code Explanation: **Artist**
+
+_Class_ ini berada di _package_ model
