@@ -134,5 +134,34 @@ Terakhir, searchArtist mencari artis berdasarkan _keyword_ nama. Pencarian mengg
 
 ## Output Explanation
 
+Ketika program dijalankan, yang ditampilkan sama persis dengan projek sebelumnnya, bedanya hanya ada tambahan menu, fitur _search_ yang bekerja seperti berikut. 
 
+<img width="394" height="365" alt="image" src="https://github.com/user-attachments/assets/a7dc5a0f-b7c2-4353-90f6-1c51b316683d" />
 
+Perbedaan lainnya adalah ada penambahan properti _country_, seperti di bawah ini.
+
+<img width="434" height="712" alt="image" src="https://github.com/user-attachments/assets/b23cf7c9-af83-4841-8f65-081a6bb58523" />
+
+---
+
+## Bonus Score Explanation
+
+### Nilai tambah 1: penerapan MVC (Model-View-Controller). 
+
+1. **Class Artist** sebagai **Model**, karena berisi struktur data artis yang memakai atribut, _constructor_, dan juga _getter setter_. _Class_ ini hanya menyimpan data tanpa ada logika program.
+2. **Class Main** sebagai **View**, karena berisi struktur menu yang ditampilkan untuk _user_, alias _interface_. Di sini _user_ berinteraksi lewat menu yang telah disediakan. Jadi, _class_, ini hanya menampilkan dan menerima _input_ tanpa ada logika.
+3. **Class Artist Service** sebagai **Controller**, karena berisi logika program (CRUD, Search, ArrayList) di mana data akan diolah.
+
+### Nilai tambah 2: Validasi Input
+
+Nilai tambah yang kedua adalah validasi input, terutama jika _user_ melanggar instruksi. Di sini digunakan _try catch_ agar muncul peringatan bahwa pengguna melakukan kesalahan. Kesalahan yang dimaksud dapat berbentuk salah memasukkan tipe data saat memilih menu atau saat ingin menghapus/memperbarui data. Berikut contoh salah satu kode dan _output_nya.
+
+<img width="622" height="148" alt="image" src="https://github.com/user-attachments/assets/cbd377d1-7b01-48f8-b32f-347f339bd6f1" />
+
+<img width="427" height="346" alt="image" src="https://github.com/user-attachments/assets/c48b021c-c825-4eb2-8af2-334e6db67675" />
+
+<img width="498" height="272" alt="image" src="https://github.com/user-attachments/assets/0d9d01fc-7c6e-4aff-b931-fe1625be9b17" />
+
+### Nilai tambah 3: Fitur _Search_
+
+Fitur _search_ adalah fitur di mana pengguna dapat mencari artis yang ingin dia periksa. Kode dan _output_ sudah tertera di penjelasan sebelumnya.
