@@ -148,6 +148,8 @@ Perbedaan lainnya adalah ada penambahan properti _country_, seperti di bawah ini
 
 ### Nilai tambah 1: penerapan MVC (Model-View-Controller). 
 
+<img width="343" height="173" alt="image" src="https://github.com/user-attachments/assets/7ed3420d-6d35-43b1-962b-d9cd80a61896" />
+
 1. **Class Artist** sebagai **Model**, karena berisi struktur data artis yang memakai atribut, _constructor_, dan juga _getter setter_. _Class_ ini hanya menyimpan data tanpa ada logika program.
 2. **Class Main** sebagai **View**, karena berisi struktur menu yang ditampilkan untuk _user_, alias _interface_. Di sini _user_ berinteraksi lewat menu yang telah disediakan. Jadi, _class_, ini hanya menampilkan dan menerima _input_ tanpa ada logika.
 3. **Class Artist Service** sebagai **Controller**, karena berisi logika program (CRUD, Search, ArrayList) di mana data akan diolah.
