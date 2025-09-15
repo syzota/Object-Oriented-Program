@@ -122,4 +122,17 @@ Di bawah ini adalah _Method_ updateArtist dipakai untuk memperbarui data artis b
 
 <img width="684" height="187" alt="image" src="https://github.com/user-attachments/assets/00ffa17a-860a-47bf-8a39-e6ceecd687a9" />
 
+Selanjutnya ada _Method_ deleteArtist yang menghapus artis berdasarkan index. Sama seperti yang lain, jika benar akan berhasil dan jika salah akan ada peringatan.
+
 <img width="667" height="168" alt="image" src="https://github.com/user-attachments/assets/185ab022-0913-45a9-9a32-cb618b453f4b" />
+
+Terakhir, searchArtist mencari artis berdasarkan _keyword_ nama. Pencarian menggunakan _case-insensitive_, yaitu tidak melihat besar kecilnya huruf input.
+
+<img width="725" height="262" alt="image" src="https://github.com/user-attachments/assets/6294a80c-fe5f-48c1-9086-6f626bb424cb" />
+
+---
+
+## Output Explanation
+
+
+
