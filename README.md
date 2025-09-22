@@ -167,3 +167,14 @@ Nilai tambah yang kedua adalah validasi input, terutama jika _user_ melanggar in
 ### Nilai tambah 3: Fitur _Search_
 
 Fitur _search_ adalah fitur di mana pengguna dapat mencari artis yang ingin dia periksa. Kode dan _output_ sudah tertera di penjelasan sebelumnya.
+
+-------------------------------------------------------------------------------------------------
+
+# Posttest 3
+
+---
+
+## Program Description
+Tema yang digunakan masih sama, konsep perusahaan dari **Universal Music Group (UMG)**. Berbedanya dari Posttest 2 adalah ada keharusan menerapkan _encapsulation_ (_getter_ dan _setter_), menerapkan _inheritance_ dan _Overriding_. Selain itu banyak perubahan pada pengembangan program yaitu menu bertambah menjadi bisa melihat konser, kontrak
+
+---
