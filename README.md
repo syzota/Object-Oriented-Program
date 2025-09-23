@@ -175,6 +175,16 @@ Fitur _search_ adalah fitur di mana pengguna dapat mencari artis yang ingin dia 
 ---
 
 ## Program Description
-Tema yang digunakan masih sama, konsep perusahaan dari **Universal Music Group (UMG)**. Berbedanya dari Posttest 2 adalah ada keharusan menerapkan _encapsulation_ (_getter_ dan _setter_), menerapkan _inheritance_ dan _Overriding_. Selain itu banyak perubahan pada pengembangan program yaitu menu bertambah menjadi bisa melihat konser, kontrak
+Tema yang digunakan masih sama, konsep perusahaan dari **Universal Music Group (UMG)**. Berbedanya dari Posttest 2 adalah ada keharusan menerapkan _encapsulation_ (_getter_ dan _setter_), menerapkan _inheritance_ dan _Overriding_. Selain itu banyak perubahan pada pengembangan program yaitu menu bertambah menjadi bisa melihat konser, kontrak, dan albumyang diproduksi.
 
 ---
+
+## Package Explanation
+
+Program ini dibagi ke dalam tiga _package_ sesuai konsep MVC. Pada _main_ terdapat _class Main_ yang menjadi _entry point_ dan menampilkan menu CRUD serta fitur tambahan. Package model berisi struktur data, yaitu Artist sebagai _superclass_ dengan _subclass_ Band dan SoloArtist, serta _class_ tambahan Album, Concert, dan Contract untuk merepresentasikan karya, konser, dan kontrak artis. _Package_ service menyimpan logika program berupa ArtistService, AlbumService, ConcertService, ContractService, dan DataSeeder yang mengelola dummy data.
+
+<img width="589" height="352" alt="image" src="https://github.com/user-attachments/assets/8f8023ef-1c8f-4bd6-a584-d76e26a284c4" />
+
+---
+
+## Code Explanation: **Main**
