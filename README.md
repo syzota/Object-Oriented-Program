@@ -187,4 +187,56 @@ Program ini dibagi ke dalam tiga _package_ sesuai konsep MVC. Pada _main_ terdap
 
 ---
 
-## Code Explanation: **Main**
+## Code Explanation: **Encapsulation**
+
+Semua atribut di class Artist, Band, SoloArtist, Album, Concert, dan Contract dideklarasikan sebagai private dan untuk mengakses dan mengubah nilai digunakan getter & setter.
+
+<img width="819" height="657" alt="image" src="https://github.com/user-attachments/assets/776ca467-279c-40d1-b47e-4ecd5738c51f" />
+
+## Code Explanation: **Inheritance**
+
+Inheritance terdapat 1 superclass dan 2 subclass, Artist dijadikan superclass, Band dan SoloArtist menjadi subclass yang mewarisi atribut & method dari Artist.
+
+<img width="890" height="124" alt="image" src="https://github.com/user-attachments/assets/6ba18b8c-c464-4ee7-b292-b2ac8fb26a36" />
+
+## Code Explanation: **Overriding**
+
+Override dipakai untuk mengubah isi method displayInfo() dari superclass (Artist) supaya tampilannya beda di subclass (Band, SoloArtist, Album, Concert, Contract).
+
+<img width="526" height="152" alt="image" src="https://github.com/user-attachments/assets/8a966202-3c6e-41e4-a465-a0605d662ec9" />
+
+---
+
+## Class and Package Explanation
+
+### Main (View) - _entry point_, menampilkan menu dan menjalankan input dari user.
+### Model 
+1. Artist, superclass utama berisi atribut dasar artis (name, genre, country, debut, label, manager).
+2. Band, subclass Artist untuk artis grup, punya tambahan atribut list anggota.
+3. SoloArtist, subclass Artist untuk artis solo, punya tambahan atribut nickname.
+4. Album, representasi album artis, berisi judul, tahun rilis, artis terkait, dan daftar track.
+5. Concert, representasi konser, berisi nama konser, lokasi, tahun, dan lineup artis yang tampil.
+6. Contract, representasi kontrak artis dengan label (label + periode kontrak).
+### Service (Controller)
+1. ArtistService, service untuk mengelola data artis (add, view, update, delete, search).
+2. AlbumService, service untuk mengelola data album.
+3. ConcertService, service untuk mengelola data konser.
+4. ContractService, service untuk mengelola data kontrak.
+5. DataSeeder, pengisi data dummy artis, album, konser, kontrak.
+
+---
+
+## Ouput Explanation
+
+<img width="655" height="424" alt="image" src="https://github.com/user-attachments/assets/f27c36bb-2b63-471f-b82d-9d0b2187fa1d" />
+
+Seperti yang dikatakan tadi, ada tambahah menu seperti yang terlihat di atas, dan menu add tetap punya atribut seperti awal, tetapi data yang masuk mempunyai atribut lain seperti manajer, debut dan kontrak. Berikut output dari menu melihat data album, konser dan kontrak.
+
+<img width="643" height="431" alt="image" src="https://github.com/user-attachments/assets/d4ce6fd7-2002-4aef-a20e-574eff3c1a11" />
+
+<img width="652" height="490" alt="image" src="https://github.com/user-attachments/assets/97b74812-4cb8-420c-9b48-689c6517ea54" />
+
+<img width="681" height="507" alt="image" src="https://github.com/user-attachments/assets/c7fb5beb-32df-4986-a0f1-0d351ccf32d1" />
+
+
+
