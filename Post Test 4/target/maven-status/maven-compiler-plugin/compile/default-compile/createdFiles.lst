@@ -1,0 +1,14 @@
+model\SoloArtist.class
+service\AlbumService.class
+model\Contract.class
+model\Artist.class
+model\PerformableInt.class
+model\ArtistAbstract.class
+main\Main.class
+model\Concert.class
+service\ContractService.class
+model\Band.class
+service\ConcertService.class
+service\DataSeeder.class
+model\Album.class
+service\ArtistService.class
