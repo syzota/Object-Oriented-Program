@@ -263,6 +263,28 @@ dArtistAbstract dijadikan abstract class sehingga tidak bisa dibuat objek langsu
 
 ## Code Explanation: **Polymorphism**
 
-**Overriding**, dipakai di subclass. Misalnya di Band dan SoloArtist, method displayInfo() diubah sesuai formatnya masing-masing.
+**Overriding**, dipakai di subclass. Misalnya di Band dan SoloArtist, method displayInfo() diubah sesuai formatnya masing-masing. **Overloading** berada di Album dan ada dua method addTrack(), satu untuk menambahkan satu lagu, satu lagi untuk menambahkan banyak lagu sekaligus.
 
-**Overloading** berada di Album dan ada dua method addTrack(), satu untuk menambahkan satu lagu, satu lagi untuk menambahkan banyak lagu sekaligus.
+<img width="592" height="142" alt="image" src="https://github.com/user-attachments/assets/bb64bc77-0289-4ba4-8b82-ceab88917d2f" />
+
+---
+
+## Ouput Explanation: Main
+
+Ada tambahan abstraksi, subclass sekarang tampil beda sesuai tipe artis (Band atau SoloArtist).
+
+<img width="513" height="333" alt="image" src="https://github.com/user-attachments/assets/343777c5-adbe-431c-ac3b-9d8878813ab0" />
+
+<img width="875" height="737" alt="image" src="https://github.com/user-attachments/assets/60edee66-0289-4339-a08e-04942b832181" />
+
+## Ouput Explanation: Overloading
+
+<img width="512" height="420" alt="image" src="https://github.com/user-attachments/assets/69d8caed-b8ac-4361-a114-671cfa017f4b" />
+
+---
+
+## Nilai Tambah
+
+Program ini menggunakan abstraction yang juga menggabungkan dengan interface. Dengan kombinasi ini, ArtistAbstract menjadi blueprint dasar artis (abstraction) dan PerformableInt mendefinisikan kontrak tambahan, yaitu setiap artis wajib bisa perform(). Tujuannya agar truktur program lebih fleksibel.
+
+
