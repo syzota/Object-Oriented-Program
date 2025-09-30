@@ -238,5 +238,19 @@ Seperti yang dikatakan tadi, ada tambahah menu seperti yang terlihat di atas, da
 
 <img width="681" height="507" alt="image" src="https://github.com/user-attachments/assets/c7fb5beb-32df-4986-a0f1-0d351ccf32d1" />
 
+# Posttest 4
 
+---
+
+## Program Description
+Tema yang digunakan masih sama, konsep perusahaan dari **Universal Music Group (UMG)**. Berbedanya dari Posttest sebelumnya adalah ada keharusan menerapkan _abstraction_ (minimal 1 abstract class atau 1 interface), dan _polymorphism_ (minimal menggunakan 1 Overloading dan 1 Overriding). Untuk nilai tambah, akan menggunakan kombinasi abstract class dan interface secara bersamaan dalam program.
+
+---
+
+## Package Explanation
+
+Program ini dibagi ke dalam tiga _package_ sesuai konsep MVC. Pada _main_ terdapat _class Main_ yang menjadi _entry point_ dan menampilkan menu CRUD serta fitur tambahan. Package model berisi struktur data, yaitu Artist sebagai _superclass_ dengan _subclass_ Band dan SoloArtist, serta _class_ tambahan Album, Concert, dan Contract untuk merepresentasikan karya, konser, dan kontrak artis. _Package_ service menyimpan logika program berupa ArtistService, AlbumService, ConcertService, ContractService, dan DataSeeder yang mengelola dummy data.
+
+
+---
 
