@@ -243,14 +243,26 @@ Seperti yang dikatakan tadi, ada tambahah menu seperti yang terlihat di atas, da
 ---
 
 ## Program Description
-Tema yang digunakan masih sama, konsep perusahaan dari **Universal Music Group (UMG)**. Berbedanya dari Posttest sebelumnya adalah ada keharusan menerapkan _abstraction_ (minimal 1 abstract class atau 1 interface), dan _polymorphism_ (minimal menggunakan 1 Overloading dan 1 Overriding). Untuk nilai tambah, akan menggunakan kombinasi abstract class dan interface secara bersamaan dalam program.
+Tema tetap sama yaitu **Universal Music Group (UMG)**. Bedanya dari Posttest 3 adalah harus menerapkan _Abstraction_ (abstract class / interface) dan _Polymorphism_ (Overloading + Overriding). Maka, pada Posttest 4, Artist diubah menjadi ArtistAbstract (abstract class) dan ditambah PerformableInt (interface). Dengan begitu, Band dan SoloArtist wajib mengimplementasikan method abstrak & interface. Selain itu, polymorphism diterapkan lewat Overriding (misalnya displayInfo() yang berbeda di tiap subclass) dan Overloading (method dengan nama sama tapi parameter beda, misalnya di Album untuk menambah track).
 
 ---
 
 ## Package Explanation
 
-Program ini dibagi ke dalam tiga _package_ sesuai konsep MVC. Pada _main_ terdapat _class Main_ yang menjadi _entry point_ dan menampilkan menu CRUD serta fitur tambahan. Package model berisi struktur data, yaitu Artist sebagai _superclass_ dengan _subclass_ Band dan SoloArtist, serta _class_ tambahan Album, Concert, dan Contract untuk merepresentasikan karya, konser, dan kontrak artis. _Package_ service menyimpan logika program berupa ArtistService, AlbumService, ConcertService, ContractService, dan DataSeeder yang mengelola dummy data.
-
+Struktur packages masih sama dengan Posttest 3 (main, model, service), hanya di package model ada tambahan Artist diganti jadi ArtistAbstract (abstract class) yang berisi atribut umum dan method abstrak displayInfo(), dan ditambah interface PerformableInt yang wajib diimplementasikan oleh Band & SoloArtist untuk menunjukkan siapa yang bisa tampil di konser.
 
 ---
 
+## Code Explanation: **Abstraction**
+
+dArtistAbstract dijadikan abstract class sehingga tidak bisa dibuat objek langsung. Method displayInfo() ditandai sebagai abstrak dan dipaksa di-override di subclass. PerformableInt interface ditambahkan agar Band dan SoloArtist punya method performOnStage() dengan implementasi berbeda.
+
+<img width="960" height="850" alt="image" src="https://github.com/user-attachments/assets/cf84bdb6-7a59-49bc-86b5-78931f353a10" />
+
+<img width="569" height="326" alt="image" src="https://github.com/user-attachments/assets/1abbb0d0-9bf3-49d2-8d55-b12865c53ffd" />
+
+## Code Explanation: **Polymorphism**
+
+**Overriding**, dipakai di subclass. Misalnya di Band dan SoloArtist, method displayInfo() diubah sesuai formatnya masing-masing.
+
+**Overloading** berada di Album dan ada dua method addTrack(), satu untuk menambahkan satu lagu, satu lagi untuk menambahkan banyak lagu sekaligus.
