@@ -287,4 +287,17 @@ Ada tambahan abstraksi, subclass sekarang tampil beda sesuai tipe artis (Band at
 
 Program ini menggunakan abstraction yang juga menggabungkan dengan interface. Dengan kombinasi ini, ArtistAbstract menjadi blueprint dasar artis (abstraction) dan PerformableInt mendefinisikan kontrak tambahan, yaitu setiap artis wajib bisa perform(). Tujuannya agar truktur program lebih fleksibel.
 
+# Posttest 5
+
+---
+
+## Program Description
+Tema tetap sama yaitu **Universal Music Group (UMG)**. Bedanya dari Posttest 4 adalah harus menerapkan satu _class_ lagi yang berisi _statement_, dan ada pengembangan CRUD menggunakan ORM atau _Object Relational Mapping_. Berarti, ada juga penerapan JDBC atau _Java Database Connectivity_ yang merupakan API standar di Java untuk menghubungkan aplikasi dengan database (di sini menggunakan MySQL). Pada Posttest 3 dan 4 data artis, album, konser, serta kontrak masih berupa dummy yang dimasukkan melalui DataSeeder dan disimpan di ArrayList, sedangkan pada Posttest 5 seluruh data awal sudah disimpan di dalam database melalui tabel-tabel seperti artists, albums, concerts, dan contracts. Menu CRUD yang sebelumnya hanya memanipulasi ArrayList kini terhubung langsung dengan database menggunakan ORM sehingga setiap operasi tambah, lihat, ubah, hapus, dan cari artis akan langsung memengaruhi isi tabel di database. 
+
+---
+
+## Extra Class Explanation
+
+Terdapat satu class tambahan yang menerapkan JDBC dengan Statement untuk menampilkan data secara langsung dari database ke console, sehingga Posttest 5 memperluas program dengan menggabungkan konsep OOP dari tugas sebelumnya dengan pengelolaan data nyata melalui database.
+
 
