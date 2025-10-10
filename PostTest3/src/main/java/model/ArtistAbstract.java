@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package model;
+
+public abstract class ArtistAbstract {
+    private String name;
+    private String genre;
+    private String country;
+    private int debutYear;
+    private String label;
+    private String manager;
+
+    public ArtistAbstract(String name, String genre, String country, int debutYear, String label, String manager) {
+        this.name = name;
+        this.genre = genre;
+        this.country = country;
+        this.debutYear = debutYear;
+        this.label = label;
+        this.manager = manager;
+    }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getGenre() { return genre; }
+    public void setGenre(String genre) { this.genre = genre; }
+    public String getCountry() { return country; }
+    public void setCountry(String country) { this.country = country; }
+    public int getDebutYear() { return debutYear; }
+    public void setDebutYear(int debutYear) { this.debutYear = debutYear; }
+    public String getLabel() { return label; }
+    public void setLabel(String label) { this.label = label; }
+    public String getManager() { return manager; }
+    public void setManager(String manager) { this.manager = manager; }
+
+    // Abstract Method
+    public abstract void displayInfo();
+}
