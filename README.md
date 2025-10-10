@@ -292,12 +292,51 @@ Program ini menggunakan abstraction yang juga menggabungkan dengan interface. De
 ---
 
 ## Program Description
-Tema tetap sama yaitu **Universal Music Group (UMG)**. Bedanya dari Posttest 4 adalah harus menerapkan satu _class_ lagi yang berisi _statement_, dan ada pengembangan CRUD menggunakan ORM atau _Object Relational Mapping_. Berarti, ada juga penerapan JDBC atau _Java Database Connectivity_ yang merupakan API standar di Java untuk menghubungkan aplikasi dengan database (di sini menggunakan MySQL). Pada Posttest 3 dan 4 data artis, album, konser, serta kontrak masih berupa dummy yang dimasukkan melalui DataSeeder dan disimpan di ArrayList, sedangkan pada Posttest 5 seluruh data awal sudah disimpan di dalam database melalui tabel-tabel seperti artists, albums, concerts, dan contracts. Menu CRUD yang sebelumnya hanya memanipulasi ArrayList kini terhubung langsung dengan database menggunakan ORM sehingga setiap operasi tambah, lihat, ubah, hapus, dan cari artis akan langsung memengaruhi isi tabel di database. 
+Tema tetap sama yaitu **Universal Music Group (UMG)**. Bedanya dari Posttest 4 adalah harus menerapkan satu _class_ lagi yang berisi _statement_, dan ada pengembangan CRUD menggunakan ORM atau _Object Relational Mapping_. Berarti, ada juga penerapan JDBC atau _Java Database Connectivity_ yang merupakan API standar di Java untuk menghubungkan aplikasi dengan database (di sini menggunakan MySQL). Pada Posttest 3 dan 4 data artis, album, konser, serta kontrak masih berupa dummy yang dimasukkan melalui DataSeeder dan disimpan di ArrayList, sedangkan pada Posttest 5 seluruh data awal sudah disimpan di dalam database.
 
 ---
 
-## Extra Class Explanation
+## JDBC (Statement)
 
-Terdapat satu class tambahan yang menerapkan JDBC dengan Statement untuk menampilkan data secara langsung dari database ke console, sehingga Posttest 5 memperluas program dengan menggabungkan konsep OOP dari tugas sebelumnya dengan pengelolaan data nyata melalui database.
+Sesuai instruksi posttest, ditambahkan satu class baru yaitu ArtistViewer yang berfungsi menampilkan data artis langsung dari database menggunakan perintah SQL berbasis Statement. Ini menjadi implementasi dasar koneksi database secara manual sebelum masuk ke ORM.
 
+<img width="763" height="531" alt="image" src="https://github.com/user-attachments/assets/4e8db3ed-f8fb-4087-9927-522558529bb5" />
+
+---
+
+## ORM (Hibernate)
+
+Posttest 5 mengimplementasikan ORM dengan Hibernate untuk melakukan operasi CRUD berbasis entitas. Sebuah class entity bernama ArtistEntity dibuat dan dihubungkan ke tabel artists, lengkap dengan konfigurasi di file hibernate.cfg.xml serta service baru ArtistORMService yang mengelola data melalui Hibernate Session.
+
+<img width="913" height="693" alt="image" src="https://github.com/user-attachments/assets/dbc9ebff-51f4-4183-a1cb-e5c04cc9b3eb" />
+
+<img width="922" height="573" alt="image" src="https://github.com/user-attachments/assets/b311c48c-60e7-435f-a0df-580f19149849" />
+
+---
+
+## Packages and Classes
+
+Struktur MVC masih dipertahankan, namun bagian Model kini berisi entity class yang terhubung langsung dengan database. Beberapa class di main ditambah untuk pengecekan apakah koneksi ke database berhasil atau tidak. 
+
+<img width="280" height="552" alt="image" src="https://github.com/user-attachments/assets/a159e0b8-ac4d-45f9-8b68-1e849ed3bcf0" />
+
+Beberapa file baru ditambahkan untuk mendukung integrasi database, yaitu hibernate.cfg.xml sebagai konfigurasi Hibernate, ArtistEntity.java sebagai representasi tabel artis, ArtistORMService.java untuk operasi CRUD berbasis ORM, dan ArtistViewer.java untuk menampilkan data dengan JDBC.
+
+---
+
+## Dependency Configuration
+
+Jika Posttest 4 hanya berupa proyek Java biasa, maka Posttest 5 dikembangkan sebagai proyek Maven agar bisa menambahkan dependency seperti mysql-connector-j, hibernate-core, dan jakarta.persistence yang dibutuhkan untuk koneksi database dan ORM.
+
+<img width="824" height="762" alt="image" src="https://github.com/user-attachments/assets/62281f07-0bdc-4c18-a6f2-6c2fe113e152" />
+
+---
+
+## Output Explanation
+
+<img width="807" height="888" alt="image" src="https://github.com/user-attachments/assets/1950ae47-ca08-4730-8597-23a4ba3d2907" />
+
+Menu utama program kini memiliki tambahan opsi untuk menampilkan data menggunakan JDBC dan ORM. Hal ini memungkinkan pengguna melihat perbandingan antara cara akses data secara manual dan berbasis database, sementara menu CRUD lama tetap dipertahankan sebagai referensi konsep OOP.
+
+<img width="798" height="873" alt="image" src="https://github.com/user-attachments/assets/1db676c5-7513-46e3-9015-5cf5e3588ffc" />
 
